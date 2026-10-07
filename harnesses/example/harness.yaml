@@ -1,0 +1,12 @@
+$schema: https://harnessprotocol.io/schema/v1/harness.schema.json
+version: "1"
+kind: profile
+metadata:
+  name: example
+  description: Starter harness. Rename it and describe when an agent should use it.
+  version: "0.1.0"
+instructions:
+  operational: file://./instructions/operational.md
+skills:
+  - name: example-skill
+    source: ./skills/example-skill

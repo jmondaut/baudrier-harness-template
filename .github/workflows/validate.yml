@@ -1,0 +1,12 @@
+name: validate
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Pin a release tag (or a full commit SHA). The platform repository must allow access from your other
+      # repositories: Settings > Actions > General > Access.
+      - uses: jmondaut/baudrier-platform/onboarding/validate-action@v1
