@@ -10,3 +10,6 @@ instructions:
 skills:
   - name: example-skill
     source: ./skills/example-skill
+x-agents:
+  - name: code-reviewer
+    source: ./agents/code-reviewer.md
